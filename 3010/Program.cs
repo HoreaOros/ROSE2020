@@ -39,11 +39,11 @@ namespace _3010
 
             //radacinaPatrata();
 
-            //cifraPI();
+            cifraPI();
 
             // numarMultipli();
 
-            elimCifra();
+            //elimCifra();
 
         }
 
@@ -100,7 +100,10 @@ namespace _3010
             double d = 3.123;
             double pi = Math.Floor(d); // partea intreaga
             double pf = d - pi;
-
+            if (pf == 0.123)
+            {
+                Console.WriteLine("OK");
+            }
             double epsilon = 0.000000001;
             if (Math.Abs(pf - 0.123) < epsilon)
             {
