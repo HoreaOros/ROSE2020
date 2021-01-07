@@ -13,7 +13,7 @@ namespace _2611
         {
             // Fractie
             //fractie();
-            //fractie2();
+            fractie2();
 
             //AfisarePuteri();
 
@@ -22,7 +22,7 @@ namespace _2611
 
             //AfisareTr();
 
-            ScaraNumerelor();
+            //ScaraNumerelor();
 
 
         }
@@ -161,8 +161,8 @@ namespace _2611
         //10 * 10 / 30 = 3 r 10
         private static void fractie2()
         {
-            int m = 1, n = 3;
-
+            int m = 13, n = 30;
+            // TODO aducem fractia la forma ireductibila. 
             int parteInt, parteFract;
             parteInt = m / n; // 0
             parteFract = m % n; // 13
