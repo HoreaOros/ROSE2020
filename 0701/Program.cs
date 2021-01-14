@@ -12,8 +12,8 @@ namespace _0701
         static void Main(string[] args)
         {
             //fibonacci1(5);
-            //fibonacci2(5);
-            //Console.WriteLine($"Al 5-lea numar din sirul Fibonacci este: {fibonacci3(5)}"); 
+            //fibonacci2(1, 1, 5);
+            Console.WriteLine($"Al 5-lea numar din sirul Fibonacci este: {fibonacci3(5)}"); 
 
             //int n = 100;
             //fibonacci4(n);
@@ -24,7 +24,7 @@ namespace _0701
             //int n = 50;
             //fibonacci6(n);
 
-            egale();
+            //egale();
 
         }
 
@@ -225,28 +225,28 @@ namespace _0701
                 return 1;
             }
             else
+            {
                 return fibonacci3(n - 1) + fibonacci3(n - 2);
+            }
+                
         }
 
         /// <summary>
         /// Afisam primii n termeni ai sirului lui Fibonacci recursiv
         /// </summary>
         /// <param name="n"></param>
-        private static void fibonacci2(int n)
+        /// <param name="a">primul termen din sirul Fibonacci</param>
+        /// <param name="b">al doilea termen din sirul Fibonacci</param>
+        private static void fibonacci2(int a, int b, int n)
         {
-            if (n == 1)
+            if (n == 0)
             {
-                Console.WriteLine("1");
-            }
-            else if (n == 2)
-            {
-                Console.WriteLine("1");
-                Console.WriteLine("1");
+                return;
             }
             else
             {
-                // TODO
-                // ...
+                Console.WriteLine(a);
+                fibonacci2(b, a + b, n - 1);
             }
         }
 
